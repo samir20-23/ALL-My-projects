@@ -12,14 +12,15 @@ color:transparent;
 
     img{
    
-    transform: rotate(-30deg);
-    transform: scaleX(6);
-    transform: scaleY(12);
-    transform: rotateX(181deg);
-    transform: rotate(-30deg) ;
-    transform: rotate(30deg);
-    transform: translate(100px,100px) skewY(15deg) ;
-}
+    transform: rotate(-30deg); /// dwran img
+    transform: scaleX(6);  ///tmdid mn jhat X
+    transform: scaleY(12);  ////tmdid mn jhat y
+     transform: scale(12);  ////tmdid mn jhatat klha
+    transform: rotateX(181deg);  /// 9lb 3aks img 
+    transform: translate(100px,100px);  /// park f paj
+  transform: skewY(15deg); // jbd img mn jnab
+ 
+ }
 
 
 ####imag####
