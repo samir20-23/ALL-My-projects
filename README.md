@@ -10,7 +10,7 @@ color:transparent;
     }
     ### imag disayn####
 
-    .img1{
+    img1{
    
     transform: rotate(-30deg);
     transform: scaleX(6);
