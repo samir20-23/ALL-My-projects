@@ -5,7 +5,7 @@ background-image: url(soli.jpg);
 background-size: cover;
 background-clip: text;
 -webkit-background-clip: text;
-color:transparent;
+color:transparent;}
 
     }
     ### imag disayn####
@@ -32,17 +32,10 @@ color:transparent;
 
         #####################thrik#######################
 
-@keyframes rotateImage {                     /*smi hd 3mliya ay ism */
-  0% {                                        /* bdaya thwl*/
-    transform:  translateX(0);                     /* */
-  }
-  100% {                                         /* nihaya thwl*/
-    transform: translate(300px,300px) ;                    /* hawl : ila hada lmw93 300X 300Y*/
-  }
-}
+
         ////////////hd str f lmotaba9 3alyh//////////
 animation: rotateImage 3s linear infinite;
-    animation-direction: alternate-reverse; /*ithaw bsalaasa*/
+    animation-zdirection: alternate-reverse; /*ithaw bsalaasa*/
 
     ############thrik button########
     @keyframes rotateImage {
