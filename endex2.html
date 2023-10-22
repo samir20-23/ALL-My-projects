@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Social Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="endex.css">
+    <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root {
+    --background: #ffffff;
+	--active: #00C896;	
+}
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+	background-color: var(--background);
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-wrapper {
+	position: relative;
+}
+
+.socials-menu {
+	opacity: 0;	
+	transition: opacity 0.5s;
+}
+
+.active > .socials-menu {
+	opacity: 1;	
+}
+
+.share-button {
+	
+	
+	position: absolute;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+	transition: all 1.2s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	background-color: var(--background);
+	border-radius: 50%;
+	outline: 2px solid rgb(224, 0, 253);
+	outline-offset: 15px;
+}
+
+.share-button img {
+	box-shadow: 3px 2px 19px 3px;
+	
+	height: 88px;
+	width: 88px;
+}
+
+.active .share-button, .share-button:hover {
+	background-color: var(--active);
+	transform: scale(1.03);
+}
+
+.social {
+	box-shadow: 1px 2px 11px 9px;
+	position: absolute;
+	list-style: none;
+	transition: all 0.5s ease-in-out;
+	display: grid;
+	cursor: pointer;
+	place-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	outline: 4px solid rgba(96, 4, 255, 0.765);
+	outline-offset: 3px;
+}
+
+.social img {
+	height: 32px;
+	width: 32px;
+	transition: all 0.3s;
+}
+
+.social a {
+	display: grid;
+	cursor: pointer;
+	place-items: center;
+}
+
+.social:hover img {
+    transform: scale(1.10);
+}
+
+.active .social:nth-child(1) {
+	transform: translateX(-82px);
+	
+}
+
+
+.active .social:nth-child(1):hover {
+	background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+
+.active .social:nth-child(2) {
+	transform: translateY(-82px);
+}
+
+.active .social:nth-child(2):hover {
+	background-color: #bdbdbd;
+}
+
+.active .social:nth-child(3) {
+	transform: translateX(82px);
+}
+
+.active .social:nth-child(3):hover {
+	background: radial-gradient(
+        circle at 30% 107%, #f50031 0%, 
+       #28beeb 90%
+    ); 
+}
+
+.active .social:nth-child(4) {
+	transform: translateY(82px);
+}
+
+.active .social:nth-child(4):hover {
+	background-color:#4e9bff;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="socials-wrapper">
+        <button class="share-button">
+            <img src="https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg" alt="Share On Socials" />
+        </button>
+        <ul class="socials-menu">
+            <li class="social">
+                <a href="https://instagram.com/tanjawi_samir1?igshid=OGQ5ZDc2ODk2ZA==" title="Instagram">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-1464521-1239436.png?f=webp&w=256"
+                        alt="Instagram" />
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://twitter.com/SAMIRAOULADAMAR#" title="Twitter">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-twitter-x-9583449-7741112.png?f=webp&w=256"
+                        alt="Twitter" />
+                </a>
+            </li>
+            <li class="social" title="Threads">
+                <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=cSRfBZZnZTgSxZbRwmVcPNhwjvzgSPfgSlJRZqCPSKSmPVSDmhJZFktZvqTnPwNDkZlfcKzqNqSLNwRzPhHglRFnBKFkQRkCkxRmSqnSVHbrTLWxDBJcNDBWkWxqGcCnwHlJJpctpWzSfdvhTzZnjVhcMXdXHblB">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-gmail-1796352-1524233.png?f=webp&w=256"
+                        alt="Threads" />
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.facebook.com/profile.php?id=100022274520025" title="facebook">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-1496034-1265528.png?f=webp&w=256"
+                        alt="Youtube" />
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+
+
+    const shareButton = document.querySelector('.share-button');
+    const toggleSocials = () => {
+        const socialsWrapper = document.querySelector('.socials-wrapper')
+        const shareButtonImage = shareButton.querySelector('img')
+
+        socialsWrapper.classList.toggle('active')
+
+        if (shareButtonImage.src.includes('share')) {
+            shareButtonImage.src = 'https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg';
+        } else {
+            shareButtonImage.src = 'https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg';
+        }
+    }
+
+    shareButton.addEventListener('click', toggleSocials);
+</script>
+
+</html>
