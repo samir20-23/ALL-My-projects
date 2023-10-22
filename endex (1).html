@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    h1{
+font-size: 5vw;
+background-image: url(soli.jpg);
+background-size: cover;
+background-clip: text;
+-webkit-background-clip: text;
+color:transparent;
+
+    }
+body {
+  background-image: url(bck3.jpg); /* Replace 'your-image.jpg' with the path to your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+   /* Adjust the duration (10s) and other properties as needed */
+}
+img{
+    
+}
+@keyframes rotateImage {
+  0% {
+    transform:  translateX(0);
+  }
+  100% {
+    transform: translate(300px,300px) ;
+  }
+}
+@keyframes rotateImage {
+  0% {
+    transform:  skewY(-5deg);
+  }
+  100% {
+    transform: skewY(5deg) ;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.button {
+
+
+transition: transform 0.3s, background-color 0.3s, border-radius 0.3s;
+
+ 
+
+
+
+
+
+
+
+
+
+  font-family: 'cursive';
+  text-transform: uppercase;
+
+
+
+ animation: pulse 1s alternate-reverse infinite;
+    transform: perspective(1000px) rotateX(20deg);
+    padding: transform 0.5s ease, background-color 0.5s ease;
+     border: 25px solid #000000;
+  
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+padding: 7px 20px;
+  background-color: #00458f; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove the border */
+  /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners */
+   /* Change cursor to a hand on hover */
+}
+
+.button:hover {
+
+
+
+
+
+
+
+
+
+
+    transform: translate(5px, -5px);
+    animation: rotateImage 1s linear infinite;
+    animation-direction: alternate-reverse;
+  background-color: #b30000; 
+  /* Change background color on hover */
+padding: 10px 20px;}
+.button:active {transform: scale(1.1);
+  background-color: #ff5722;
+  border-radius: 30%;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  padding: 7px 18px;
+  background-color: #ff5722; /* تغيير لون الخلفية عند النقر */
+ }
+
+    </style>
+</head>
+<body>
+    <button class="button"><h1>Click Me</h1></button>
+
+     <div class="circle">
+        <div class="image"></div>
+    </div>
+    <img class="img1" src="https://media.istockphoto.com/id/1449784915/photo/digital-brain.jpg?s=612x612&w=0&k=20&c=3IbEhLnYth164iPGI026GWiXcedswAJE99VHSn-pqkU=" alt="img" width="311px">
+    <img class="img2" src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww" alt="img" width="311px">
+    <img class="img4" src="https://images.unsplash.com/photo-1617791160536-598cf32026fb?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww" alt="img" width="311px">
+    <img class="img5" src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww" alt="img" width="311px">
+        <img class="img6" src="https://media.istockphoto.com/id/1401980646/photo/3d-rendered-classic-sculpture-metaverse-avatar-with-network-of-low-poly-glowing-purple-lines.jpg?s=612x612&w=0&k=20&c=SyPEypDcGl9021jj7pP0GW3T_Y7FNa_0yEt9KAak4Gk=" alt="img" width="311px">
+    <img class="img7" src="bcka1.png" alt="cc" width="311">
+        <h1>HELLO</h1>
+        
+
+    <script>
+   const button = document.querySelector('.button');
+    const clickSound = document.getElementById('click-sound');
+
+    button.addEventListener('click', () => {
+        clickSound.play();
+    });
+
+    </script>
+</body>
+
+</html>
