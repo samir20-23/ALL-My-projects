@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .to{
+        width: 611px;
+        height: 411px;
+        border: 1px solid red;
+        background-color: rgba(0, 0, 0, 0.51); 
+        position: relative;
+       z-index:20;
+
+
+
+       }
+        .ex1{
+            width: 81px;
+        height:81px;
+        
+        border-radius: 150px;
+        position: absolute;
+        top:71%;
+        left: 24%;
+        z-index:-5;
+
+
+       }
+       .ex2{
+    width: 4px;
+    height: 61px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    background-color: blueviolet;
+    position: absolute;
+    top: 69.7%;
+    left: 34.5%;
+    transform: rotate(55deg);
+        z-index:-4;
+        
+
+
+       }
+       .ex3{
+        width: 17px;
+    height: 102px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: blueviolet;
+    border-radius: 11px 0px 61px 11px / 12px 36px 259px 251px;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    transform: rotate(90deg);
+    z-index:1;
+    
+
+
+       }
+       .ex4{
+        width: 5px;
+    height: 74px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    position: absolute;
+    top: 66%;
+    left: 42%;
+        background-color: blueviolet;
+        z-index:-1;
+
+       }
+       .ex5{background-color: rgb(43, 12, 72);
+        width: 27px;
+    height: 11px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 63%;
+    left: 40%;
+   /* border-radius: 5px 35px 650px 0px / 0px 0px 257px 193px; */
+;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 31px;
+border-top-left-radius: 11px;
+border-bottom-left-radius: 11px;
+
+       }
+       .ex6{background-color: rgba(38, 11, 64, 0.979);
+            width: 14px;
+    height: 16px;
+    border: 6px solid black;
+    border-radius: 150px;
+    position: absolute;
+    top: 79%;
+    left: 44%;
+    z-index:3;
+       }
+       .ex7{    width: 3px;
+    height: 26px;
+    border: 1px solid rgba(60, 1, 65, 0.772);
+    background-color: black;
+    position: absolute;
+    top: 82%;
+    left: 46%;
+    transform: rotate(172deg);
+    z-index:3;
+
+       }
+       .ex8{width: 5px;
+    height: 13px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    background-color: black;
+    position: absolute;
+    top: 87%;
+    left: 46%;
+    transform: rotate(77deg);
+
+       }
+       .ex9{    width: 5px;
+    height: 105px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: rotate(78deg);
+background-color: blueviolet;
+z-index:-3;
+       }
+       .ex10{      width: 5px;
+    height: 105px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    position: absolute;
+    top: 61%;
+    left: 52%;
+    transform: rotate(52deg);
+    background-color: blueviolet;
+
+       }
+       .ex11{
+    width: 4px;
+    height: 48px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    position: absolute;
+    top: 59%;
+    left: 59%;
+    transform: rotate(516deg);
+    background-color: blueviolet;
+
+       }
+       .ex12{
+        width: 81px;
+        height:81px;
+       
+        border-radius: 150px;
+        position: absolute;
+        top:71%;                                             
+        left: 57%;
+        z-index:-1;
+        
+
+
+       }
+       
+       .ex13{
+    width: 3px;
+    height: 20px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    background-color: black;
+    position: absolute;
+    top: 56.7%;
+    left: 55.8%;
+    transform: rotate(97deg);}
+    .ex14{
+    width: 6px;
+    height: 48px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 68%;
+    left: 62%;
+    transform: rotate(513deg);
+    background-color: rgba(0, 0, 0, 0.98);
+    
+    }
+    .ex15{
+    width: 6px;
+    height: 25px;
+    border: 1px solid rgba(241, 73, 255,0.3 );
+    background-color: blueviolet;
+    position: absolute;
+    top: 68.4%;
+    left: 40%;
+    transform: rotate(58deg);
+    
+    
+    }
+    @keyframes rol{
+      0%{}
+      50%{}
+      100%{}
+    }
+    @keyframes rool1{
+      0%{transform: translateY(278px) translateX(0) ;}
+      50%{transform: translateY(282px) translateX(0);}
+     100%{transform: translateY(278px) translateX(0);}
+    }
+    @keyframes rool2{
+      0%{transform: translateY(288px) translateX(0) ;}
+      50%{transform: translateY(286px) translateX(0);}
+     100%{transform: translateY(287.1px) rotate(2deg) translateX(2px);} ;}
+@keyframes rolo{
+      0%{transform:translateX(-811px) ;}
+      
+     
+     55%{transform:  translateX(1px);}
+   100%{transform:translateX(-811px)}}
+@keyframes eee{
+      0%{transform:translateX(-811px) ;}
+      
+     
+     55%{transform:  translateX(1px);}
+   100%{transform:translateX(-811px)}}
+     .rol{
+   animation: rool1  0.3s  infinite ;
+   animation-direction: reverse;
+}
+
+
+
+
+@keyframes eee2{
+     0%{transform:translateX(-801px) ;}
+      
+     
+     55%{transform:  translateX(1px);}
+   100%{transform:translateX(-891px)}}
+
+
+.rol2{
+   animation: rool2 0.2s infinite;
+   animation-direction: reverse;
+}
+.land{
+   position: absolute;
+   top: 92%;
+   width:100%;
+   height: 50px;
+   border: 1px solid rgb(0, 0, 0);
+   background-color: rgba(128, 255, 0, 0.679);
+   transform: rotate(-1.2deg);
+}
+.ston1{
+    position: absolute;
+    top: 90%;
+    left: 13.3%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston2{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 26.6%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston3{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston4{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 53.3%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston5{
+    position: absolute;
+    top: 90%;
+    left: 66%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston6{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston7{
+    position: absolute;
+    top: 90%;
+    left: 93.3%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston8{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 106%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston9{
+    position: absolute;
+    top: 90%;
+    left: 120%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: zzz, rgb(255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   }
+.ston10{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 133.3%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston11{
+    position: absolute;
+    top: 90%;
+    left: 146.6%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston12{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+
+.ston13{
+
+    
+animation: eee2 0.6s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston14{
+
+    
+animation: eee2 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston15{
+
+    
+animation: eee2 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston16{
+
+    
+animation: eee2 0.3s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston17{
+
+    
+animation: rolo 0.2s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 265.3%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+.ston18{
+    position: absolute;
+    top: 90%;
+    left: 149.6%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+animation: rolo 1s infinite;
+   animation-direction: reverse;}
+.ston19{
+
+    
+animation: rolo 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 64%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+
+.ston20{
+
+    
+animation: eee2 0.6s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston21{
+
+    
+animation: eee2 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston22{
+
+    
+animation: eee2 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston23{
+
+    
+animation: eee2 1s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+.ston24{
+
+    
+animation: eee2 0.6s infinite;
+   animation-direction: reverse;
+    position: absolute;
+    top: 90%;
+    left: 100%;
+    width: 2%;
+    height: 9px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 255, 0, 0.679);
+    border-radius:137px;
+    transform: rotate(-1deg);
+}
+
+
+
+
+
+    .lo1{
+           
+            animation: go  0.1s infinite;
+            animation-direction:normal ;
+            width:80px;
+            height:80px;
+            border:6px solid black;
+            border-radius:150px;
+         
+        
+    }
+         .lo2{
+            width:35px;
+            height:35px;
+            border:3px solid black;
+            border-top-right-radius:40px;
+            position:absolute;
+            
+            left:39px;
+            background-color:red;
+         }
+         .lo3{
+           
+                 
+            width:35px;
+            height:35px;
+            border:3px solid black;
+            border-bottom-left-radius:40px;
+            position:absolute;
+            top:39px;
+            
+            background-color:red;         }
+         
+         .bidl{
+            position: absolute;
+            animation: go  0.1s infinite;
+            animation-direction:normal ;
+         }
+         
+    @keyframes go{
+       0%{transform: rotate(0deg);}
+       99%{transform: rotate(360deg);
+         }
+     100%{transform: rotate(0deg);
+         }}
+    </style>
+</head>
+<body>
+    <div class="to">
+                 <div class="rol2">
+                      <div class="ex1">
+                        <div class="lo1"> 
+                            <div id="kl" class="lo2"> </div>
+                            <div id="kl" class="lo3"> </div></div>
+
+                      </div>
+                      <div class="ex2"></div>
+                      <div class="ex3"></div>
+                </div>
+            
+            <div class="ex4"></div>
+            <div class="ex5"></div>
+         <div class="bidal">
+            <div class="ex6"></div>
+            <div class="ex7"></div>
+            <div class="ex8"></div>
+        </div>
+            <div class="ex9"></div>
+            <div class="ex10"></div>
+            <div class="ex11"></div>
+                <div class="rol">
+                     <div class="ex12"> <div class="lo1"> 
+                        <div id="kl" class="lo2"> </div>
+                        <div id="kl" class="lo3"> </div></div> </div>
+                     <div class="ex14"></div>
+                </div>
+            
+            <div class="ex13"></div>
+            
+            <div class="ex15"></div>
+            <div class="ex16"></div>
+            <div class="ex17"></div>
+            <div class="land"></div>
+            <div class="ston1"></div>
+            <div class="ston2"></div>
+            <div class="ston3"></div>
+            <div class="ston4"></div>
+            <div class="ston5"></div>
+            <div class="ston6"></div>
+            <div class="ston7"></div>
+            <div class="ston8"></div>
+            <div class="ston9"></div>
+            <div class="ston10"></div>
+            <div class="ston11"></div>
+            <div class="ston12"></div>
+            <div class="ston13"></div>
+            <div class="ston14"></div>
+            <div class="ston15"></div>
+            <div class="ston16"></div>
+            <div class="ston17"></div>
+            <div class="ston18"></div>
+            <div class="ston19"></div>
+            <div class="ston20"></div>
+            <div class="ston21"></div>
+            <div class="ston23"></div>
+            <div class="ston24"></div>
+      
+       <div class="tio"> 
+
+</div>
+    <div class="lo10"> </div>
+    <div class="lo11"> </div>
+    <div class="lo12"> </div>
+    </div>
+        </div>
+</body>
+</html>
