@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .to{
+        width: 333px;
+        height: 320px;
+        position: relative;
+        top: 0;
+        left: 30%;
+       
+    }
+.sun{
+    width: 201px;
+    height: 201px;
+    background-image:  radial-gradient(circle, red, yellow,rgba(255, 255, 0, 0.323));;
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 0, 0.17);
+    border-radius:50% ;
+    animation:sunn 2s infinite;
+    animation-direction: alternate-reverse;
+    
+}
+.shb{
+    left: 52px;
+    border-radius: 50% 50% 1px 1px;    
+    padding: 42px;
+}
+.shbone{
+    left: 169px;
+    border-radius: 50% 50% 43px 1px;    
+    padding: 22px;
+}
+.shbtwo{
+    left: 2px;
+    border-radius: 50% 50% 1px 22px;    
+}
+#shb{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    bottom: 0px;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    background:#ffffff;
+    animation: move 5s infinite;
+    animation-direction: alternate-reverse;
+
+}
+.one{
+    width: 41px;
+    height: 61px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 45%;
+    border-top:4px solid black;
+    animation: wasoone 1s infinite;
+
+
+}
+.two{ width: 41px;
+    height: 61px;
+    position: absolute;
+    bottom: 0;
+    left: 42px;
+    border-radius: 45%;
+    border-top:4px solid black;
+    animation: wasotwo 1s infinite;
+
+    
+}
+@keyframes wasoone{
+    0%{ 
+        transform: translate(0deg) rotate(0);
+     }
+    100%{ 
+        transform: translateX(3px) rotate(-15deg) ;
+   }
+}
+@keyframes wasotwo{
+    0%{ 
+        transform:rotate(0) translate(0deg);
+     }
+    100%{ 
+        transform: translateX(-3px) rotate(15deg);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes move{
+    from{ transform: translateX(1px); }
+    to{ transform: translateX(50px) ;}
+}
+@keyframes sunn{
+    from{ box-shadow:0px 0px 50px 20px yellow; }
+    to{ box-shadow:0px 0px 60px 20px rgb(255, 255, 0);}
+}
+    </style>
+</head>
+<body>
+    <div class="to">
+        <div class="sun"></div>
+        <div id="shb" class="shb"></div>
+        <div id="shb" class="shbone"></div>
+        <div id="shb" class="shbtwo"></div>
+        <span class="one"></span>
+        <span class="two"></span>
+    </div>
+</body>
+</html>
