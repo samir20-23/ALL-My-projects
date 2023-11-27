@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+<input id="in" type="number" placeholder="number">
+<button id="bt" onclick="fun()">hear</button>
+<script>
+
+
+function fun(){
+let input = document.getElementById("in").value;
+
+let day;
+switch (+input) {
+  case 1:
+    day = "One";
+    break;
+  case 2:
+    day = "Two";
+    break;
+  case 3:
+    day = "Three";
+    break;
+  case 4:
+    day = "Four";
+    break;
+  case 5:
+    day = "Five";
+    break;
+  case  6:
+    day = "Six";
+    break
+    default: day =""
+}
+document.getElementById("demo").innerHTML +=  day + `<hr>`;}
+
+</script>
+
+</body>
+</html>
