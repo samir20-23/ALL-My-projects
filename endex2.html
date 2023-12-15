@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="endex.css">
     <style>
-    
+   
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 :root {
@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-	background-color: var(--background);
+	background-color: rgba(58, 95, 126, 0.608);
 	height: 100vh;
 	display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
 }
 
 .share-button img {
-	box-shadow: 3px 2px 19px 3px;
+
 	
 	height: 88px;
 	width: 88px;
@@ -125,7 +125,7 @@ body {
 }
 
 .active .social:nth-child(2):hover {
-	background-color: #bdbdbd;
+	background-image: linear-gradient(to right,#ffafaf94,#ffa6a66d);
 }
 
 .active .social:nth-child(3) {
@@ -133,10 +133,7 @@ body {
 }
 
 .active .social:nth-child(3):hover {
-	background: radial-gradient(
-        circle at 30% 107%, #f50031 0%, 
-       #28beeb 90%
-    ); 
+	background-image:linear-gradient(to right,#f5000042,#4b5997b4,#f6ff0039); 
 }
 
 .active .social:nth-child(4) {
@@ -146,6 +143,21 @@ body {
 .active .social:nth-child(4):hover {
 	background-color:#4e9bff;
 }
+#imgg{
+animation: move 5s infinite ;
+
+}
+@keyframes move{
+    0%{
+transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+transform: rotate(0deg);
+    }
+}
     </style>
 </head>
 
@@ -153,7 +165,7 @@ body {
 
     <div class="socials-wrapper">
         <button class="share-button">
-            <img src="https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg" alt="Share On Socials" />
+            <img id="imgg" src="button.png" alt="Share On Socials" />
         </button>
         <ul class="socials-menu">
             <li class="social">
@@ -170,7 +182,7 @@ body {
             </li>
             <li class="social" title="Threads">
                 <a
-                    href="https://mail.google.com/mail/u/0/#inbox?compose=cSRfBZZnZTgSxZbRwmVcPNhwjvzgSPfgSlJRZqCPSKSmPVSDmhJZFktZvqTnPwNDkZlfcKzqNqSLNwRzPhHglRFnBKFkQRkCkxRmSqnSVHbrTLWxDBJcNDBWkWxqGcCnwHlJJpctpWzSfdvhTzZnjVhcMXdXHblB">
+                    href="https://mail.google.com/mail/u/0/#snoozed">
                     <img src="https://cdn.iconscout.com/icon/free/png-512/free-gmail-1796352-1524233.png?f=webp&w=256"
                         alt="Threads" />
                 </a>
@@ -195,9 +207,9 @@ body {
         socialsWrapper.classList.toggle('active')
 
         if (shareButtonImage.src.includes('share')) {
-            shareButtonImage.src = 'https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg';
+            shareButtonImage.src = 'button.png';
         } else {
-            shareButtonImage.src = 'https://www.shutterstock.com/image-vector/white-round-button-vector-illustration-260nw-1721068399.jpg';
+            shareButtonImage.src = 'button.png';
         }
     }
 
