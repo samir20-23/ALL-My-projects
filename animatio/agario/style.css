@@ -1,0 +1,133 @@
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.ball1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.balls {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: blue;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  
+}
+#balls31{
+position: absolute;
+
+  animation: moveball1 15s   infinite;
+  animation-direction: reverse;
+}
+
+#balls32{
+  position: absolute;
+  
+    animation: moveball1 16s  infinite;
+animation-direction: alternate;
+  }
+  #balls33{
+    position: absolute;
+    
+      animation: moveball1 17s infinite;
+  animation-direction: reverse;
+    }
+    #balls34{
+      position: absolute;
+      
+        animation: moveball1 18s  infinite;
+    animation-direction: alternate;
+      }
+      #balls35{
+        position: absolute;
+        
+          animation: moveball1 19s  infinite;
+      animation-direction: reverse;
+        }
+        #balls36{
+          position: absolute;
+          
+            animation: moveball2 20s infinite;
+        animation-direction: alternate;
+          }
+          #balls37{
+            position: absolute;
+            
+              animation: moveball2 21s   infinite;
+          
+            }
+            #balls38{
+              position: absolute;
+              
+                animation: moveball2 22s infinite;
+            
+              }
+              #balls39{
+                position: absolute;
+                
+                  animation: moveball2 23s  infinite;
+              animation-direction: reverse;
+                }
+                #balls40{
+                  position: absolute;
+                  
+                    animation: moveball2 25s infinite;
+                
+                  }
+
+@keyframes moveball1{
+0%{left: 10%; }
+25%{top: 0%;}
+45%{top: 50%;}
+50%{left: 89%; top: 90%;  }
+75%{top: 50%;left: 19%;}
+100%{left: 0%; }
+}
+@keyframes moveball2{
+  0%{left: 89%; }
+  50%{top: 20%;left: 1%; }
+  100%{left: 89%; }
+  
+  }
+  
+ @keyframes moveover{
+  0%{top: -50px;}
+  50%{}
+  100%{top: 100px;}
+ }

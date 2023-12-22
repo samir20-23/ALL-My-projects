@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.ball1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.balls {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: blue;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+#bigCircles31 {
+  position: absolute;
+
+  animation: moveball1 5s infinite;
+  animation-direction: alternate;
+}
+
+#bigCircles32 {
+  position: absolute;
+
+  animation: moveball1 10s infinite;
+  animation-direction: alternate;
+}
+#bigCircles33 {
+  position: absolute;
+
+  animation: moveball1 10s infinite;
+  animation-direction: reverse;
+}
+#bigCircles34 {
+  position: absolute;
+
+  animation: moveball1 15s infinite;
+  animation-direction: alternate;
+}
+#bigCircles35 {
+  position: absolute;
+
+  animation: moveball1 13s infinite;
+  animation-direction: alternate;
+}
+#bigCircles36 {
+  position: absolute;
+
+  animation: moveball2 17s infinite;
+  animation-direction: alternate;
+}
+#bigCircles37 {
+  position: absolute;
+
+  animation: moveball2 11s infinite;
+}
+#bigCircles38 {
+  position: absolute;
+
+  animation: moveball2 18s infinite;
+}
+#bigCircles39 {
+  position: absolute;
+
+  animation: moveball2 20s infinite;
+  animation-direction: alternate;
+}
+#bigCircles40 {
+  position: absolute;
+
+  animation: moveball2 22s infinite;
+}
+
+@keyframes moveball1 {
+  0% {
+    left: 10%;
+  }
+  25% {
+    top: 0%;
+  }
+  45% {
+    top: 50%;
+  }
+  50% {
+    left: 89%;
+    top: 59%;
+  }
+  75% {
+    top: 50%;
+    left: 19%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes moveball2 {
+  0% {
+    left: 89%;
+  }
+  50% {
+    top: 20%;
+    left: 1%;
+  }
+  100% {
+    left: 89%;
+  }
+}
