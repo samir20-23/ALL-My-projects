@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+    //ELEMENT
+ let to = document.createElement("div");
+ let input1 =document.createElement("input");
+ let input2 = document.createElement("input");
+ let btn = document.createElement("button");
+ let axn = document.createElement("div");
+ let arr=[];
+document.body.appendChild(to)
+ to.appendChild(input1)
+  to.appendChild(input2)
+   to.appendChild(btn)
+   to.appendChild(axn)
+   //rea
+   to.id="to"
+   axn.id="axn"
+   btn.id="btn"
+   input1.type="number";
+   input2.type="number";   
+   btn.textContent = "click";
+   
+   //style
+   to.setAttribute("style", "  width: 232px ; height: 240px; background: blueviolet; position: relative; margin-top: 3 %; left: 30%; ");
+   axn.setAttribute("style", " margin-left: 36%;");
+   btn.setAttribute("style", "margin-left: 40%;");
+   document.body.setAttribute("style", "zoom: 3;");
+
+
+   //CLICK
+   btn.addEventListener("click",function(){
+    //CALC
+    let value1 = input1.value;
+    let value2 = input2.value;
+    let total = value1 * value2;
+    axn.innerHTML=total;
+    //PUSH
+    arr.unshift({
+        to:total,
+        tol: value1,
+        toll: value2
+    })
+    //FUNCTION FUNC()
+    func()
+    //localStorage 'set'
+    localStorage.setItem("local",JSON.stringify(arr))
+   })
+    //loop values
+  function func(){
+    axn.innerHTML="";
+  for (let i=0 ; i<arr.length ; i++){
+axn.innerHTML+= arr[i].tol +" x "+arr[i].toll +" = "+arr[i].to + `<br>`
+  }
+  }
+    //localStorage 'get'
+if(localStorage.getItem("local")){
+    arr = JSON.parse(localStorage.getItem("local"))
+    func()
+}
+    </script>
+</body>
+</html>
