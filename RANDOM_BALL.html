@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #ele2 {
+
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            top: 33px;
+            left: 44px;
+            border-radius: 50%;
+        }
+
+        #ele3 {
+
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 83px;
+            left: 94px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ele"></div>
+    <div id="ele2"></div>
+    <div id="ele3"></div>
+    <script>
+        let ele = document.getElementById("ele");
+        let ele2 = document.getElementById("ele2");
+        let ele3 = document.getElementById("ele3");
+
+
+
+        ele.addEventListener("click", function () {
+            function func() {
+                let x = Math.floor(Math.random() * 520)
+                let y = Math.floor(Math.random() * 320)
+                ele.style.left = x + "px"
+                ele.style.top = y + "px"
+            }
+            setTimeout(func, 55)
+            setInterval(func, 115)
+        })
+
+        ele2.addEventListener("click", function () {
+            function func() {
+                let x = Math.floor(Math.random() * 520)
+                let y = Math.floor(Math.random() * 520)
+                ele2.style.left = x + "px"
+                ele2.style.top = y + "px"
+            }
+            setTimeout(func, 5)
+            setInterval(func, 75)
+        })
+
+        ele3.addEventListener("click", function () {
+            function func() {
+                let x = Math.floor(Math.random() * 650)
+                let y = Math.floor(Math.random() * 630)
+                ele3.style.left = x + "px"
+                ele3.style.top = y + "px"
+            }
+            setTimeout(func, 75)
+            setInterval(func, 335)
+        })
+
+    </script>
+
+</body>
+
+</html>
