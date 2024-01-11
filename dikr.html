@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+         background-image: linear-gradient(to right,#000000,#000,#ffffff);
+    }
+    .divto{
+        width:700px;
+        height: 700px;
+        border:4px solid rgb(0, 0, 0);
+        border-radius: 10%;
+        background-image: linear-gradient(to right,#ffffff,#000,#000);
+        position: absolute;
+       top: 0;
+       left: 30%;
+            box-shadow: 0 0 31px 14px #000000;
+             font-size: 55px;
+             border: 3px solid rgb(255, 0, 0);  
+    }
+    .div1{
+       
+    color: #ffffff;
+    position: absolute;
+   top: 45%;
+    left: 46.5%;
+    z-index: 1;
+   text-align: center;
+    
+    text-shadow: 0 1px 12px #000000;
+    
+    
+}
+    
+    .btn1{
+        width:350px;
+        height: 350px;
+        border-radius: 50%;
+         background-image: radial-gradient(closest-side , rgb(0, 0, 0), rgb(253, 0, 0), rgb(0, 0, 0));
+        box-shadow: 1px 5px 35px 9px #3D3D3D;
+       position: absolute;
+           top: 25%;
+           left: 25%;
+            font-size: 55px;
+             border: 3px solid rgb(255, 0, 0);  
+             
+    }
+    .btn2{
+        width:100px;
+        height: 100px;
+         border-radius: 50%;
+          background-image: radial-gradient(closest-side , rgb(255, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0));
+         box-shadow: 1px 5px 25px 9px #3D3D3D;
+         position: absolute;
+              bottom: 9%;
+              left: 2%;
+              
+               font-size: 55px;
+              border: 3px solid rgb(255, 0, 0);  
+    }
+    .btn3{
+        width:100px;
+        height: 100px;
+         border-radius: 50%;
+         background-image: radial-gradient(closest-side , rgb(255, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0));
+
+         box-shadow: 1px 5px 35px 9px #3D3D3D;
+         position: absolute;
+               top: 9%;
+              left: 2%;
+               font-size: 25px;
+               border: 3px solid rgb(255, 0, 0);  
+               color: rgba(0, 255, 255, 0.839);
+    }
+    .in1{
+        width: 100px;
+        position: absolute;
+        left: 39%;
+        top:5%;
+        background: #ffffff1a;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 33px;
+        border: 2px solid rgb(0, 13, 255);
+        border-radius: 12%;
+        text-align: center;
+        border: 3px solid rgb(255, 0, 0);
+    
+    }
+    </style>
+</head>
+<body>
+    <script>
+    let divto = document.createElement("div")
+let div1 = document.createElement("div")
+let btn1 = document.createElement("button");
+let btn2 = document.createElement("button");
+let btn3 = document.createElement("button");
+let in1 = document.createElement("input");
+
+let arr = [];
+
+document.body.appendChild(divto);
+divto.appendChild(div1);
+divto.appendChild(btn1);
+divto.appendChild(btn2);
+divto.appendChild(btn3);
+divto.appendChild(in1)
+
+
+btn1.textContent = div1.value;
+btn2.textContent = "-";
+btn3.textContent = "remove";
+btn3.style.padding = "0px"
+    divto.classList="divto"
+    div1.classList="div1"
+    btn1.classList="btn1"
+    btn2.classList="btn2"
+    btn3.classList="btn3"
+    in1.classList="in1"
+    
+
+    let ex = localStorage.getItem("ex") || 0; // Retrieve ex from localStorage or set default value to 1
+    div1.innerHTML = ex;
+
+
+btn1.addEventListener("click",function(){ 
+    //input 
+    let val = in1.value;
+   if(ex == val){
+   alert("-----")
+   }
+        btn1.style.boxShadow = "1px 5px 35px 9px  #45c400d1"
+  function c(){ btn1.style.boxShadow = "1px 5px 35px 9px #000"}  
+    setTimeout(c,111)
+ex++
+    div1.innerHTML = ex;
+    arr.push({value:ex})
+    localStorage.setItem("local",JSON.stringify(arr));
+    localStorage.setItem("ex", ex);
+})
+    btn2.addEventListener("click", function () {
+        ex--
+        div1.innerHTML = ex;
+         arr.push({ value: ex })
+          localStorage.setItem("local", JSON.stringify(arr));
+     localStorage.setItem("ex", ex);
+})
+        btn3.addEventListener("click", function () {
+            ex=0    
+           div1.innerHTML =ex;
+            
+            localStorage.removeItem("local");
+            localStorage.removeItem("ex");
+            });
+    if(localStorage.getItem("local")){
+
+        arr=JSON.parse(localStorage.getItem("local"))
+        
+        for(let  i of arr){
+            div1.innerHTML = i.value
+        }
+        
+    }
+
+   
+ 
+    </script>
+</body>
+</html>
