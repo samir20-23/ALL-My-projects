@@ -1,0 +1,407 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./Ressources/Poppins/Poppins-Light.ttf);
+  }
+  
+  
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins  ;
+    list-style: none;
+  }
+  
+  
+  
+  
+
+ 
+  
+ #dronee{
+
+        width: 492px;
+        position: absolute;
+        left: 662px;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 600px;
+        
+    }
+    @keyframes movedrone {
+        0%{top: 120px; }
+        100%{  top: 180px; }
+        
+    }
+  
+ 
+  /*  looogo */
+ 
+  
+  
+    .logo-box {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-box img {
+    width: 20px;
+  } 
+  .logo-box .logo-text {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  /*  */
+    :root{
+    --jaune:#FFB860;
+    --mauve:#2958D2;
+  }
+  header{
+    background-color: var(--mauve);
+    padding: 20px ;
+  }
+  header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .container .nav{
+    display: flex;
+  }
+  header .container li{
+    padding: 10px;
+  }
+  
+  .landing{
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(180deg,var(--mauve),var(--jaune));
+  }
+  .landing .container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .landing .container .text-box{
+    max-width: 300px ;
+    color: white;
+  }
+  
+  .landing .container .text-box p{
+    margin:20px 0;
+    font-size: 12px;
+    
+  }
+  
+  .landing .container .text-box button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: var(--jaune);
+  }
+  
+  .landing .container .landing-img{
+    width: 50%;
+  }
+   .container{
+    padding: 0 10px;
+    margin: auto;
+  }
+  .landing .container .landing-img  img{
+    width: 100%;
+  }
+  
+  .service{
+    width: 100%;
+  }
+  
+  .service .container .service-title{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .service .container .service-title h1{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top:50px ;
+  }
+  
+  .service .container .service-title p{
+    font-size: 12px ;
+    font-weight: 400;
+    margin-top:20px ;
+    max-width: 450px;
+  }
+  
+  .service .container .servece-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .service .container .servece-cards .card{
+    width: 40% ;
+    text-align: center;
+    padding: 10px;
+    margin-bottom:30px;
+  }
+  
+  .service .container .servece-cards .card .title{
+    color: var(--mauve);
+    margin-bottom: 10px;
+  }
+  .service .container .servece-cards .card .small-text{
+    font-size: 12px;
+  }
+  
+  
+  .simulateur {
+    background-color: var(--jaune);
+    padding: 50px 0 ;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px #b07903;
+  
+  }
+  
+  .simulateur .container{
+    text-align: center;
+  }
+  
+  .simulateur .container .simulateur-title{
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .simulateur .container .forms{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .simulateur .container .forms .inputs{
+    margin-left: 20px;
+  }
+  .simulateur .container .forms .inputs label{
+    font-weight:bolder ;
+    font-size:14px;
+  }
+  
+  .simulateur .container .forms .inputs input{
+    width: 60px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .simulateur .container button{
+    background-color:var(--mauve) ;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color:rgb(159, 159, 159);
+    margin-top: 50px;
+    
+  }
+  .vos{
+    padding: 60px 0;
+  }
+  .vos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .vos .container h2{
+    margin-bottom: 50px;
+  }
+  
+  .vos .container .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vos .container .cards .card{
+    margin-left: 10px;
+    width: 250px;
+    padding: 20px;
+    border-radius:20px ;
+    box-shadow:   0 0 10px 0 #0e0e0e;
+    border: 2px solid  black;
+  }
+  
+  .vos .container .cards .card .card-title{
+    font-size: 14px;
+    color:var(--mauve);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .vos .container .cards .card .card-title span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 6px;
+    display: inline-block;
+  }
+  
+  .vos .container .cards .card .price{
+    font-size: x-large;
+    margin-bottom: 20px;
+  }
+  
+  .vos .container .cards .card button{
+    background-color: var(--jaune);
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      margin-left: 60px;
+  }
+  
+  .vos .container .importent{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    color:var(--mauve) ;
+    border: 1px solid var(--mauve);
+  }
+  
+  footer{
+    padding:10px 0 ;
+    background-image: linear-gradient(0deg,var(--mauve), transparent);
+  
+  }
+  
+  footer .container main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  footer .container main ul li.title{
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--mauve);
+    margin-bottom: 30px;
+  }
+  
+  footer .container main ul li{
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  footer .container main ul img{
+    width: 30px;
+  }
+  
+  footer .container .copy{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  @media (min-width:500px) {
+  
+    #dronee{
+
+        width: 292px;
+        position: absolute;
+        left: 230px;
+        animation: movedrone 1.2s infinite alternate ;
+       
+        
+    }
+  }
+  @media (min-width:600px) {
+  
+    #dronee{
+
+        width: 292px;
+        position: absolute;
+        left: 300px;
+        animation: movedrone 1.2s infinite alternate ;
+       
+        
+    }
+  }
+  
+  @media (min-width:668px) {
+    .container{
+      width: 668px;
+    }
+    #dronee{
+
+        width: 292px;
+        position: absolute;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 350px;
+        
+    }
+  }
+  @media (min-width:768px) {
+    .container{
+      width: 668px;
+    }
+    #dronee{
+
+        width: 292px;
+        position: absolute;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 400px;
+        
+    }
+  }
+
+  @media (min-width:868px) {
+    .container{
+      width: 668px;
+    }
+    #dronee{
+
+        width: 292px;
+        position: absolute;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 450px;
+        
+    }
+  }
+
+
+  @media (min-width:998px) {
+    .container {
+      width: 990px;
+    }
+    #dronee{
+
+        width: 392px;
+        position: absolute;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 500px;
+        
+    }
+  }
+  
+  @media (min-width:1100px) {
+    .container {
+      width: 1000px;
+    }
+    #dronee{
+
+        width: 492px;
+        position: absolute;
+        left: 662px;
+        animation: movedrone 1.2s infinite alternate ;
+        left: 600px;
+        
+    }
+  }
