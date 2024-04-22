@@ -1,0 +1,36 @@
+#to{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+#tosearch{
+    height: 70vh;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid black;
+    overflow: scroll;
+    text-align: center;
+}
+#search{
+   width: 200px;
+   height: 35px;
+   border: 1px solid black;
+   border-radius: 12px;
+   
+}
+#element{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.content{
+display: flex;
+}
+img{
+    width: 50px;
+    border-radius: 12px;
+}
