@@ -1,0 +1,129 @@
+*{
+border-radius: 4px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#edit{
+border: 0.2px solid rgba(0, 0, 0, 0.158);
+background: rgb(255, 255, 255);
+border-radius: 5px;
+text-decoration: none;
+padding: 3px;
+display: flex;
+justify-content: center;
+}
+#delete{
+border: 0.2px solid rgba(0, 0, 0, 0.158);
+background: rgb(255, 255, 255);
+border-radius: 5px;
+text-decoration: none;
+padding: 3px;
+display: flex;
+justify-content: center;
+}
+#delete:active{
+border: 0px solid;
+}
+#edit:active{
+border: 0px solid;
+}
+table{
+    border:2px solid black;
+    text-align: center;
+    width: 100%;
+}
+
+/* delete */
+#formdelete{
+background: rgb(213, 213, 213);
+border: 2px solid black;
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center ;
+text-align: center;
+width: 300px;
+height: 180px;
+position: relative;
+}
+#textdelete{
+    font-size: 12px;
+}
+#btndelete{
+    
+    position: absolute;
+    left: 35%;
+    border-radius: 12px;
+    border: 2px solid rgb(202, 16, 16);
+    background: rgb(253, 0, 0);
+    color: wheat;
+    box-shadow: 0 0 10px 1px red;
+    width: 100px;
+    height: 40px;
+
+}
+#btndelete:active{
+    border: none;
+}
+#btndelete:hover{
+    
+    box-shadow: 0 0 10px 1px rgb(255, 34, 34);  
+    width: 104px;
+    height: 44px;
+    position: absolute;
+    left: 34%;
+
+}
+#imgdelete{
+    width:20px;
+    height: 20px;
+}
+#imgedit{
+    width:18px;
+    height: 20px;
+}
+/*  */
+body{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: 2px solid black;
+    box-shadow: 0 0 12px black;
+    border: 3px solid #6E6E6E;
+}
+tr{
+box-shadow: 0 0 10px black;
+
+}
+th{
+    border: 2px solid rgba(0, 75, 160, 0.607);
+    color: rgb(77, 0, 154);
+}
+input{
+    border: 0.2px solid rgba(0, 0, 0, 0.158);
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 0.2px blue;
+    font-size: 19px;
+    text-align: center;
+}
+
+#id{
+    border: 0.2px solid rgba(0, 0, 0, 0.244);
+}
+/* add */
+ #btnadd  , a{
+    border-radius: 40px;
+    border: 0.5px solid rgba(0, 0, 0, 0.244);
+    
+}
+#btnadd {
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 0.2px blueviolet;
+    font-family:'Franklin Gothic Medium';
+}
