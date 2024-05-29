@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+  float: left;
+    }
+    * {
+      transition: 0.5s;
+    }
+    #to {
+      width: 55px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #to .bar {
+      width: 100%;
+      height: 7px;
+      background: rgba(0, 0, 0, 0.829);
+      border-radius: 12px;
+    }
+    
+  </style>
+  <body>
+    <div id="to">
+      <div class="bar" id="nav1"></div>
+      <div class="bar" id="nav2"></div>
+      <div class="bar" id="nav3"></div>
+    </div>
+
+    
+    <script>
+      let to = document.getElementById("to");
+      let numbernav = 0;
+      to.addEventListener("click", function () {
+        let nav1 = document.getElementById("nav1");
+        let nav2 = document.getElementById("nav2");
+        let nav3 = document.getElementById("nav3");
+        nav1.style.transform = "rotate(30deg) translate(4px, 17px)";
+        
+        nav2.style.opacity = "0";
+        nav3.style.transform = "rotate(-30deg) translate(4px, -18px)   ";
+
+        numbernav += 1;
+        if (numbernav >= 2) {
+          nav1.style.transform = "rotate(0deg) translate(0px, 0px)";
+          nav2.style.opacity = "10";
+          nav3.style.transform = "rotate(0deg)  translate(0px, 0px)";
+          numbernav=0;
+        }
+      });
+    </script>
+  </body>
+</html>
